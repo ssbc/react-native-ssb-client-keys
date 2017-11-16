@@ -1,0 +1,26 @@
+{
+  "name": "react-native-ssb-client-keys",
+  "version": "1.0.0",
+  "description": "keyfile operations for SSB on the React Native side",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ssbc/react-native-ssb-client-keys.git"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "prepublishOnly": "npm run compile"
+  },
+  "author": "Andre Staltz",
+  "license": "MIT",
+  "dependencies": {
+    "react-native-fs": "2.3.x",
+    "ssb-keys": "7.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.9",
+    "patch-package": "^3.2.1",
+    "typescript": "2.4.x"
+  }
+}
