@@ -21,8 +21,8 @@ exports.load = function load(filename: string, cb: Callback<object>): void {
         (fileContents: any) => {
           const plainJson = fileContents.replace(/\s*\#[^\n]*/g, '')
             .split('\n')
-            .filter(s => s.length > 0)
-            .map(s => s.trim())
+            .filter((s: string) => s.length > 0)
+            .map((s: string) => s.trim())
             .join('');
           cb(null, JSON.parse(plainJson));
         },
