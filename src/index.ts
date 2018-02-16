@@ -19,7 +19,12 @@ exports.load = function load(filename: string, cb: Callback<object>): void {
     if (exists) {
       return RNFS.readFile(filename, 'ascii').then(
         (fileContents: any) => {
-          cb(null, JSON.parse(fileContents));
+          const plainJson = fileContents.replace(/\s*\#[^\n]*/g, '')
+            .split('\n')
+            .filter(s => s.length > 0)
+            .map(s => s.trim())
+            .join('');
+          cb(null, JSON.parse(plainJson));
         },
         (err: any) => {
           cb(err);
