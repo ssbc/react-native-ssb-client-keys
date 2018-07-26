@@ -15,12 +15,11 @@
   "author": "Andre Staltz",
   "license": "MIT",
   "dependencies": {
-    "react-native-fs": "2.3.x",
+    "react-native-fs": "2.10.x",
     "ssb-keys": "7.0.10"
   },
   "devDependencies": {
     "@types/node": "^8.0.9",
-    "patch-package": "^3.2.1",
     "typescript": "2.4.x"
   }
 }
