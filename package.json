@@ -15,8 +15,8 @@
   "author": "Andre Staltz",
   "license": "MIT",
   "dependencies": {
-    "react-native-fs": "2.10.x",
-    "ssb-keys": "7.0.10"
+    "react-native-fs": "2.13.x",
+    "ssb-keys": "7.1.5"
   },
   "devDependencies": {
     "@types/node": "^8.0.9",
