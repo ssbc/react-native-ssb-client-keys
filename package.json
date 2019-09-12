@@ -1,6 +1,6 @@
 {
   "name": "react-native-ssb-client-keys",
-  "version": "2.0.0-rc0",
+  "version": "2.0.0",
   "description": "keyfile operations for SSB on the React Native side",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
