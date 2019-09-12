@@ -15,10 +15,13 @@
   "author": "Andre Staltz",
   "license": "MIT",
   "dependencies": {
-    "react-native-fs": "2.13.x",
     "ssb-keys": "7.1.5"
   },
+  "peerDependencies": {
+    "react-native-fs": "2.x.x"
+  },
   "devDependencies": {
+    "react-native-fs": "2.14.x",
     "@types/node": "^8.0.9",
     "typescript": "2.4.x"
   }
